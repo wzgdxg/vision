@@ -27,9 +27,9 @@
  *        - first revision
  *
  *****************************************************************/
-package wang.zhigang.vision.serialize;
+package wang.zhigang.vision.flash.serialize;
 
-import wang.zhigang.vision.serialize.impl.JSONSerializer;
+import wang.zhigang.vision.flash.serialize.impl.JSONSerializer;
 
 /**
  * Serializer

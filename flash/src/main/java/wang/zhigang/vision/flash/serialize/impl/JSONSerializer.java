@@ -27,11 +27,11 @@
  *        - first revision
  *
  *****************************************************************/
-package wang.zhigang.vision.serialize.impl;
+package wang.zhigang.vision.flash.serialize.impl;
 
 import com.alibaba.fastjson2.JSON;
-import wang.zhigang.vision.serialize.Serializer;
-import wang.zhigang.vision.serialize.SerializerAlgorithm;
+import wang.zhigang.vision.flash.serialize.Serializer;
+import wang.zhigang.vision.flash.serialize.SerializerAlgorithm;
 
 /**
  * JSONSerializer

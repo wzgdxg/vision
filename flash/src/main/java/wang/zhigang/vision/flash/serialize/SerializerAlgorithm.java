@@ -27,7 +27,7 @@
  *        - first revision
  *
  *****************************************************************/
-package wang.zhigang.vision.serialize;
+package wang.zhigang.vision.flash.serialize;
 
 /**
  * SerializerAlgorithm

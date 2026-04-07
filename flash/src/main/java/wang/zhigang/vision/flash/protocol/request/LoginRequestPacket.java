@@ -27,11 +27,11 @@
  *        - first revision
  *
  *****************************************************************/
-package wang.zhigang.vision.protocol.request;
+package wang.zhigang.vision.flash.protocol.request;
 
-import wang.zhigang.vision.protocol.Packet;
-
-import static wang.zhigang.vision.protocol.command.Command.LOGIN_REQUEST;
+import lombok.Data;
+import wang.zhigang.vision.flash.protocol.Packet;
+import wang.zhigang.vision.flash.protocol.command.Command;
 
 /**
  * LoginRequestPacket
@@ -40,16 +40,17 @@ import static wang.zhigang.vision.protocol.command.Command.LOGIN_REQUEST;
  * @version 1.0.0
  * @create 2026/2/11 11:31
  */
+@Data
 public class LoginRequestPacket extends Packet {
 
-    private Integer userId;
+    private String userId;
 
     private String username;
 
     private String password;
 
     @Override
-    public Byte getCommand() {
-        return LOGIN_REQUEST;
+    public Command getCommand() {
+        return Command.LOGIN_REQUEST;
     }
 }

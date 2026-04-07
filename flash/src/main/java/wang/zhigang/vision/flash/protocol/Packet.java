@@ -27,9 +27,10 @@
  *        - first revision
  *
  *****************************************************************/
-package wang.zhigang.vision.protocol;
+package wang.zhigang.vision.flash.protocol;
 
 import lombok.Data;
+import wang.zhigang.vision.flash.protocol.command.Command;
 
 /**
  * Packet
@@ -49,5 +50,5 @@ public abstract class Packet {
     /**
      * 指令
      */
-    public abstract Byte getCommand();
+    public abstract Command getCommand();
 }

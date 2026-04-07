@@ -7,10 +7,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>common</artifactId>
+    <groupId>wang.zhigang.vision.nettytion</groupId>
+    <artifactId>nettytion</artifactId>
     <packaging>jar</packaging>
 
-    <name>common</name>
+    <name>nettytion</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -19,12 +20,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
+            <groupId>wang.zhigang.vision</groupId>
+            <artifactId>common</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
 </project>

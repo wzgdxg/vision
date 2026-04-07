@@ -27,7 +27,7 @@
  *        - first revision
  *
  *****************************************************************/
-package wang.zhigang.vision.protocol.command;
+package wang.zhigang.vision.flash.protocol.command;
 
 /**
  * Command
@@ -36,8 +36,21 @@ package wang.zhigang.vision.protocol.command;
  * @version 1.0.0
  * @create 2026/2/11 11:21
  */
-public interface Command {
+public enum Command {
 
-    Byte LOGIN_REQUEST = 1;
+    /**
+     * 登录
+     */
+    LOGIN_REQUEST(Byte.parseByte("1")),
+    LOGIN_RESPONSE(Byte.parseByte("2"));
 
+    private final Byte value;
+
+    Command(Byte command) {
+        this.value = command;
+    }
+
+    public Byte getValue() {
+        return value;
+    }
 }
