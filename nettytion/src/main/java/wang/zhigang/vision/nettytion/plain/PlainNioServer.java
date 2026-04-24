@@ -94,9 +94,10 @@ public class PlainNioServer {
                     }
                 }catch (IOException e){
                     e.printStackTrace();
+                    key.cancel();
                     key.channel().close();
                 }finally {
-                    key.cancel();
+
                 }
 
             }
